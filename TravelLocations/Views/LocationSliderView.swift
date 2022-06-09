@@ -120,10 +120,11 @@ extension LocationSliderView {
                                               axis: (x: 0.0, y: 1.0, z: 0.0))
                             .padding()
                     }
-                    .frame(width: 200, height: 200)
-                    .offset(x: 100, y: 0)
+                    .frame(width: UIScreen.main.bounds.width * 0.5,
+                           height: 200)
                 }
             }
+            .offset(x: UIScreen.main.bounds.width * 0.001, y: 0)
         }
     }
     
